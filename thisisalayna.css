@@ -1,15 +1,23 @@
-body {
- color: #262626;
+.navbar.navbar-expand-sm.justify-content-center .navbar.nav .nav-item .nav-link {
+
 
 }
- a:link {
-     color: #41BFBF;
- }
- a:hover {
-     color: #36A5A5;
- }
+body{
+    font-family: roboto,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #262626;
+}
+#about {
+    color: #36a5a5;
+}
+a:link {
+    color: #41BFBF;
+}
+a:hover {
+    color: #36A5A5;
+}
 
- a:visited {
-     color: #41bfbf;
- }
-
+a:visited {
+    color: #41bfbf;
+}
