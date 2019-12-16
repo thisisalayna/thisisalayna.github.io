@@ -7,6 +7,10 @@ body{
     font-style: normal;
     color: #262626;
 }
+
+.code-container {
+    position: absolute;
+}
 #about {
     color: #36a5a5;
 }
