@@ -62,16 +62,12 @@ noStroke();
 image(img, mouseX, mouseY); 
 
   } else if (toolChoice == '8') {
-
-
-  } else if (toolChoice == '9') {
 black();
 
-  } 
-  else if (toolChoice == '0') { //might change
+  } else if (toolChoice == '9') {
 clear();
-
   } 
+
  }
  function gradient()
  {
