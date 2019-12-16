@@ -16,7 +16,7 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-sm justify-content-center">
         <ul class="navbar nav topnav">
-            <li class="nav-item "><a class="nav-link" href="index.html"><img src="namelogo.png" class="img-fluid" width="72" alt="logo"></a></li>
+            <li class="nav-item "><a class="nav-link" href="index.html"><img src="namelogo.png" class="img-fluid" width="74" alt="logo"></a></li>
             <li class="nav-item"><a class="nav-link" href="glitch.html">Glitch</a></li>
             <li class="nav-item"><a class="nav-link" href="mememashup.html">Meme Mashup</a></li>
             <li class="nav-item"><a class="nav-link" href="minecraftart.html">Minecraft Sculpture</a></li>
@@ -28,12 +28,10 @@
         </ul>
     </nav>
 </div>
-<div style="padding: 20px;font-style: italic;" class="row col-sm-8">Press a number key on the keyboard. 1 through 8 are drawing tools. 9 clears the canvas.</div>
-<div style="text-align: center;padding-left: 20px;padding-right: 20px;" class="col-sm-4">
-    <div class="col-sm-4"><h1>DIY Photoshop</h1><br> This is a drawing application I created using p5.js. The idea of this drawing program is to explore the different ways you can view a rainbow and the colors within it. </div>
-</div>
+<div class="container-fluid row">
+<div style="padding: 20px;font-style: italic;" class="col-sm-8">Press a number key on the keyboard. 1 through 8 are drawing tools. 9 clears the canvas.
 
-    <script>
+<script>
     var img;
     var initials ='af'; // your initials
     var choice = '1'; // starting choice, so it is not empty
@@ -46,7 +44,7 @@
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // .jpg needs to be next to this .js file
 // you can link to an image on your github account
-        img = loadImage('diyps/dnarainbow.png');
+      // img = loadImage(dnarainbow.png);
     }
 
     function setup() {
@@ -68,9 +66,9 @@
 
 
     function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
-                                        // the key mapping if statements that you can change to do anything you want.
-                                        // just make sure each key option has the a stroke or fill and then what type of
-                                        // graphic function
+        // the key mapping if statements that you can change to do anything you want.
+        // just make sure each key option has the a stroke or fill and then what type of
+        // graphic function
 
         if (toolChoice === '1' ) {  //basic black point
 
@@ -236,7 +234,7 @@
     function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
-       if (key === 'p' || key === 'P') {
+        if (key === 'p' || key === 'P') {
             saveme();  // call saveme which saves an image of the screen
         }
     }
@@ -253,8 +251,13 @@
 
     }
 </script>
+</div>
+    <div style="text-align: center;padding-left: 50px;padding-right: 50px;" class="col-sm-4">
+        <div ><h1>DIY Photoshop</h1><br> This is a drawing application I created using p5.js.
+            The idea of this drawing program is to explore the different ways you can view a rainbow and the colors within it. </div>
+    </div>
 
-
+</div>
 
 
 </body>
