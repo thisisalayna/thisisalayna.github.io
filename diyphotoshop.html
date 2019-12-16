@@ -29,7 +29,7 @@
         </ul>
     </nav>
 </div>
-
+<div style="padding: 20px;font-style: italic;">Press a number key on the keyboard. 1 through 8 are drawing tools. 9 clears the canvas.</div>
 <script>
     var img;
     var initials ='af'; // your initials
@@ -75,29 +75,29 @@
             strokeWeight(2);
             line(mouseX, mouseY, pmouseX, pmouseY);
 
-        } else if (toolChoice == '2') {
+        } else if (toolChoice === '2') {
             ograinbow();
 
-        } else if (toolChoice == '3') {
+        } else if (toolChoice === '3') {
             gradient();
 
-        } else if (toolChoice == '4') {
+        } else if (toolChoice === '4') {
             raindot();
 
-        } else if (key == '5') {
+        } else if (toolChoice === '5') {
             raindot2();
 
-        } else if (toolChoice == '6') {
+        } else if (toolChoice === '6') {
             colorArray();
 
-        } else if (toolChoice == '7') {
+        } else if (toolChoice === '7') {
             noStroke();
             image(img, mouseX, mouseY);
 
-        } else if (toolChoice == '8') {
+        } else if (toolChoice === '8') {
             black();
 
-        } else if (toolChoice == '9') {
+        } else if (toolChoice === '9') {
             clear();
         }
 
@@ -221,11 +221,6 @@
         fill(rainbow[d.getTime()%14]);
     }
 
-    function selfPortrait()
-    {
-
-
-    }
 
     function black()
     {
@@ -238,9 +233,7 @@
     function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
-        if (key == 'x' || key == 'X') {
-            background(screenbg); // set the screen back to the background color
-        } else if (key == 'p' || key == 'P') {
+       if (key === 'p' || key === 'P') {
             saveme();  // call saveme which saves an image of the screen
         }
     }
@@ -249,7 +242,8 @@
         //this will save the name as the intials, date, time and a millis counting number.
         // it will always be larger in value then the last one.
         filename=initials+day() + hour() + minute() +second();
-        if (second()!=lastscreenshot) { // don't take a screenshot if you just took one
+
+        if (second()!==lastscreenshot) { // don't take a screenshot if you just took one
             saveCanvas(filename, 'jpg');
         }
         lastscreenshot=second(); // set this to the current second so no more than one per second
