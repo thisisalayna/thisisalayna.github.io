@@ -9,13 +9,15 @@ body{
 }
 
 .nav-item {
- font-size: 14px;
+ font-size: 15px;
+}
+
+.nav {
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
-#about {
-    color: #36a5a5;
-}
 a:link {
     color: #41BFBF;
 }
