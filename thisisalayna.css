@@ -8,6 +8,11 @@ body{
     color: #262626;
 }
 
+.nav-item {
+ font-size: 14px;
+
+}
+
 #about {
     color: #36a5a5;
 }
