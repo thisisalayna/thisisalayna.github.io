@@ -12,6 +12,10 @@ body{
  font-size: 15px;
 }
 
+.nav-link {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
 .nav {
     padding-left: 50px;
     padding-right: 50px;
