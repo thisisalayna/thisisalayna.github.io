@@ -35,4 +35,9 @@ a:visited {
 
 img-fluid {
     min-width: 25%;
+
+}
+.dim {
+
+font-size: small;
 }
